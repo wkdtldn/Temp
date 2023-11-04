@@ -1,7 +1,7 @@
-import "./App.css";
+import React from "react";
+import Input from "./component/Input";
 
 function App() {
-  return <div></div>;
+  return <Input />;
 }
-
 export default App;
