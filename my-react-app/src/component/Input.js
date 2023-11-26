@@ -1,27 +1,25 @@
 import React, { useState } from "react";
 
+const nickName = {
+  fontWeight: 600,
+};
+
 function Input() {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  let userName = "사람1";
+  const [Message, setMessage] = useState("");
 
   const onChange = (e) => {
-    setUsername(e.target.value);
-    setPassword(e.target.value);
+    setMessage(e.target.value);
     console.log(e.target);
-  };
-
-  const deleteText = () => {
-    setUsername("");
-    setPassword("");
   };
 
   return (
     <div>
-      <input onChange={onChange} value={username} />
-      <input onChange={onChange} value={password} />
-      <p>{username}</p>
-      <p>{password}</p>
-      <button onClick={deleteText}>X</button>
+      <input onChange={onChange} value={Message} />
+      <div>
+        <div style={nickName}>{userName}</div>
+        <span>{Message}</span>
+      </div>
     </div>
   );
 }
