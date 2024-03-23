@@ -1,1 +1,2 @@
-link = https://didu-story.tistory.com/86
+link1 = https://didu-story.tistory.com/86
+link2 = https://nyan101.github.io/blog/notes-on-pytorch-02
